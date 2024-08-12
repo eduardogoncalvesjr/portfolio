@@ -1,4 +1,6 @@
 /* eslint-disable max-len */
+import newVets from '../Assets/images/newVets.jpg';
+import dictionaryApp from '../Assets/images/dictionaryApp.jpg';
 
 const projects = [
   {
@@ -8,7 +10,7 @@ const projects = [
     deploy: 'https://eduardogoncalvesjr.github.io/newVets/',
     technologies: ['HTML', 'CSS', 'JAVASCRIPT', 'BOOTSTRAP'],
     text: 'This is a mock website for a fantasy vet clinic. It was made with bootstrap and is responsive for desktop, tablet and mobile',
-    imagePath: 'src/Assets/images/newVets.jpg',
+    imagePath: `${newVets}`,
   },
   {
     id: 2,
@@ -17,7 +19,7 @@ const projects = [
     deploy: 'https://dictionary-app-kappa-five.vercel.app/',
     technologies: ['REACT JS', 'CSS', 'JAVASCRIPT', 'TAILWIND'],
     text: 'Dictionary website made with Tailwind with light/dark mode available. It fetches definitions from Free Dictionary API.',
-    imagePath: 'src/Assets/images/dictionaryApp.jpg',
+    imagePath: `${dictionaryApp}`,
   },
 ];
 

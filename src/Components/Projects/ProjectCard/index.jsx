@@ -8,7 +8,7 @@ function ProjectCard({ project }) {
   return (
     <div className="projects__card">
       <div className="projects__card-header">
-        <img src={ imagePath } alt="" />
+        <img src={ imagePath } alt={ name } />
       </div>
       <div className="projects__card-info">
         <h3>{name}</h3>
