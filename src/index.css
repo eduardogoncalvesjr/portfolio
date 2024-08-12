@@ -41,12 +41,12 @@ a {
 hr {
   border-top: 2px solid var(--black);
   margin: 5rem auto 3rem;
-  width: 100%;
+  width: 85%;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1200px) {
   hr {
-    width: 85%;
+    width: 100%;
   }
 }
 
