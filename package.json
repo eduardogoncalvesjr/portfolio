@@ -1,0 +1,28 @@
+{
+  "homepage": "https://eduardogoncalvesjr.github.io/portfolio",
+  "name": "portifolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint -c .eslintrc.json . --ext .js,.jsx,.ts,.tsx",
+    "lint:styles": "npx stylelint '**/*.css'",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1"
+  },
+  "devDependencies": {
+    "@trybe/eslint-config-frontend": "^1.11.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "stylelint": "^14.16.1",
+    "stylelint-order": "^5.0.0",
+    "vite": "^5.3.4"
+  }
+}

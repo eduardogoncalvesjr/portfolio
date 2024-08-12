@@ -1,0 +1,60 @@
+@keyframes slideAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.tags-container {
+  overflow: hidden;
+  padding: 50px 0 15px;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.tags-container:before,
+.tags-container:after {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  content: '';
+  z-index: 1;
+}
+
+.tags-container:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.tags-container:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.tags-container:hover .tags-slide {
+  animation-play-state: paused;
+}
+
+.tags-slide {
+  display: inline-block;
+  animation: slideAnimation 20s infinite linear;
+}
+
+.tag-button {
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  border: none;
+  color: #ffff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  padding: 5px;
+  width: 200px;
+  margin: 0 7px;
+}

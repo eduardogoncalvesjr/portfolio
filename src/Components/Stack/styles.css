@@ -1,0 +1,48 @@
+.stack {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.stack h2 {
+  color: var(--primary);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.stack h3 {
+  color: var(--primary);
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.stack__container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stack__container-imagebox {
+  text-align: center;
+}
+
+.stack__container-imagebox img {
+  width: 5rem;
+}
+
+@media (min-width: 768px) {
+  .stack {
+    font-size: 1.5rem;
+  }
+
+  .stack h2 {
+    margin-bottom: 5rem;
+  }
+
+  .stack__container {
+    justify-content: center;
+    gap: 2rem;
+  }
+}

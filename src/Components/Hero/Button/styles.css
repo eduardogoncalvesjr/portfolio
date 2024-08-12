@@ -1,0 +1,37 @@
+.hero__button {
+  background-color: white;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.8rem 2.4rem;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.hero__button:before {
+  background-color: var(--primary);
+  border-radius: 10px;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: transform 0.3s ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero__button:hover:before {
+  transform: translate(1%, 12%);
+}
+
+@media (max-width: 768px) {
+  .hero__button:before {
+    transform: translate(2%, 12%);
+  }
+}

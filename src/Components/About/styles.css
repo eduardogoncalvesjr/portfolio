@@ -1,0 +1,59 @@
+.about {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about h2 {
+  color: var(--primary);
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.about__me,
+.about__personal {
+  text-align: center;
+}
+
+.about__image {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .about {
+    font-size: 1.2rem;
+  }
+
+  .about__image {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about__image {
+    width: 50%;
+  }
+
+  .about__me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about__personal {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+}
