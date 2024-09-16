@@ -3,8 +3,6 @@ import projects from '../../Content/content';
 import ProjectCard from './ProjectCard';
 
 function Projects() {
-  console.log(projects);
-
   return (
     <section className="projects" id="projects">
       <div className="container">

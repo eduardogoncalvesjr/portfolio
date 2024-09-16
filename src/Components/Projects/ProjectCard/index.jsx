@@ -4,6 +4,8 @@ import './styles.css';
 
 function ProjectCard({ project }) {
   const { name, github, deploy, technologies, text, imagePath } = project;
+  const maxTextLength = 130;
+  const scrollText = text.length > maxTextLength ? 'scroll-text' : '';
 
   return (
     <div className="projects__card">
@@ -22,7 +24,7 @@ function ProjectCard({ project }) {
             </button>
           ))}
         </div>
-        <div className="projects__card-info-text">
+        <div className={ `projects__card-info-text ${scrollText}` }>
           <p>{text}</p>
         </div>
       </div>
@@ -30,9 +32,13 @@ function ProjectCard({ project }) {
         <button className="projects__card-deploy-button">
           <a href={ deploy }>Deploy</a>
         </button>
-        <button className="projects__card-github-button">
-          <a href={ github }>Github</a>
-        </button>
+        {
+          github && (
+            <button className="projects__card-github-button">
+              <a href={ github }>Github</a>
+            </button>
+          )
+        }
       </div>
     </div>
   );

@@ -1,15 +1,15 @@
 .projects__card {
-  border-radius: 10px;
-  position: relative;
   background-color: white;
-  margin-bottom: 1rem;
-  padding: 1rem;
   border: 1px solid var(--black);
-  height: 440px;
-  width: 320px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  height: 440px;
   justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  position: relative;
+  width: 320px;
 }
 
 .projects__card:before {
@@ -26,31 +26,35 @@
 }
 
 .projects__card-header img {
-  width: 100%;
   max-height: 150px;
+  width: 100%;
 }
 
 .projects__card-info-tags {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
-  align-items: center;
   gap: 0.5rem;
+  justify-content: start;
   margin-top: 1rem;
 }
 
-.projects__card-info-tags button,
-.projects__card-deploy-button,
+.projects__card-info-tags button, .projects__card-deploy-button,
 .projects__card-github-button {
   border: none;
   border-radius: 1rem;
+  color: white;
   font-weight: 500;
   padding: 0 1rem;
-  color: white;
 }
 
 .projects__card-info-text {
+  height: 100px;
   margin-top: 1rem;
+}
+
+.scroll-text {
+  overflow-y: scroll;
 }
 
 .projects__card-access {
@@ -58,8 +62,8 @@
 }
 
 .projects__card-access button {
-  text-align: right;
   margin-right: 1rem;
+  text-align: right;
 }
 
 .projects__card-deploy-button {
@@ -104,4 +108,8 @@
 
 .NODE.JS-tag {
   background-color: #8bbf3d;
+}
+
+.RESPONSIVE-tag {
+  background-color: gray;
 }
