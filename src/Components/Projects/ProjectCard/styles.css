@@ -7,7 +7,6 @@
   height: 440px;
   justify-content: space-between;
   margin-bottom: 1rem;
-  padding: 1rem;
   position: relative;
   width: 320px;
 }
@@ -25,9 +24,20 @@
   z-index: -1;
 }
 
+.projects__card-header {
+  height: 42%;
+}
+
 .projects__card-header img {
-  max-height: 150px;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  object-fit: cover;
   width: 100%;
+}
+
+.projects__card__body {
+  height: 58%;
+  padding: 1rem;
 }
 
 .projects__card-info-tags {
@@ -39,8 +49,7 @@
   margin-top: 1rem;
 }
 
-.projects__card-info-tags button, .projects__card-deploy-button,
-.projects__card-github-button {
+.projects__card-info-tags button, .projects__card-deploy-button, .projects__card-github-button {
   border: none;
   border-radius: 1rem;
   color: white;

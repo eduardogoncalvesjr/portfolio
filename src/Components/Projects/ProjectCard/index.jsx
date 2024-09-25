@@ -12,33 +12,35 @@ function ProjectCard({ project }) {
       <div className="projects__card-header">
         <img src={ imagePath } alt={ name } />
       </div>
-      <div className="projects__card-info">
-        <h3>{name}</h3>
-        <div className="projects__card-info-tags">
-          {technologies.map((tech) => (
-            <button
-              className={ `${tech}-tag` }
-              key={ `${name}-${tech}` }
-            >
-              {tech}
-            </button>
-          ))}
+      <div className="projects__card__body">
+        <div className="projects__card-info">
+          <h3>{name}</h3>
+          <div className="projects__card-info-tags">
+            {technologies.map((tech) => (
+              <button
+                className={ `${tech}-tag` }
+                key={ `${name}-${tech}` }
+              >
+                {tech}
+              </button>
+            ))}
+          </div>
+          <div className={ `projects__card-info-text ${scrollText}` }>
+            <p>{text}</p>
+          </div>
         </div>
-        <div className={ `projects__card-info-text ${scrollText}` }>
-          <p>{text}</p>
+        <div className="projects__card-access">
+          <button className="projects__card-deploy-button">
+            <a href={ deploy }>Deploy</a>
+          </button>
+          {
+            github && (
+              <button className="projects__card-github-button">
+                <a href={ github }>Github</a>
+              </button>
+            )
+          }
         </div>
-      </div>
-      <div className="projects__card-access">
-        <button className="projects__card-deploy-button">
-          <a href={ deploy }>Deploy</a>
-        </button>
-        {
-          github && (
-            <button className="projects__card-github-button">
-              <a href={ github }>Github</a>
-            </button>
-          )
-        }
       </div>
     </div>
   );
